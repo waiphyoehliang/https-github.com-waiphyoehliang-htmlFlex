@@ -1,0 +1,36 @@
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  background: deepskyblue;
+}
+
+.navigation a {
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+  color: white;
+}
+.navigation a:hover {
+  background: blue;
+}
+
+@media all and (max-width: 900px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+@media all and (max-width: 600px) {
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0%;
+  }
+  .navigation a {
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
